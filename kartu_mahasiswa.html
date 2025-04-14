@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kartu Mahasiswa</title>
+    <link rel="icon" href="Logo UIN.png">
+    <style>
+        .id-card {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            overflow: hidden;
+            font-family: sans-serif;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            background-color: purple;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .logo {
+            max-width: 80px;
+            display: block;
+            margin: 10px auto 10px;
+            border-radius: 50%;
+        }
+
+        .content {
+            display: flex; /* Menggunakan flexbox untuk tata letak samping */
+        }
+
+        .photo {
+            padding: 50px;
+        }
+
+        .photo img {
+            width: 250px;
+            height: 250px;
+            border-radius: 10%;
+            object-fit: cover;
+        }
+
+        .details {
+            padding: 50px;
+            flex: 0.5; /* Mengatur proporsi lebar */
+            display: grid;
+        }
+
+        .footer {
+            background-color: #f0f0f0;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="id-card">
+        <div class="header">
+            <img src="logouin.jpg" alt="Logo Universitas" class="logo">
+            <h2>Kartu Mahasiswa</h2>
+        </div>
+        <div class="content">
+            <div class="photo">
+                <img src="human.jpg" alt="Foto Mahasiswa">
+            </div>
+            <div class="details">
+                <table>
+                    <tr>
+                      <td>Nama</td>
+                      <td>: M. Dwi Ramadhan</td>
+                    </tr>
+                    <tr>
+                      <td>NIM</td>
+                      <td>: 236250008</td>
+                    </tr>
+                    <tr>
+                      <td>Jurusan</td>
+                      <td>: Informatika</td>
+                    </tr>
+                    <tr>
+                      <td>Alamat</td>
+                      <td>: Jl. Marjun Habi, Lere, Palu Barat</td>
+                    </tr>
+                  </table>
+            </div>
+        </div>
+        <div class="footer">
+            <p>© 2025 UIN Datokarama Palu</p>
+        </div>
+    </div>
+</body>
+</html>
